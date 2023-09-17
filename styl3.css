@@ -1,0 +1,58 @@
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+header, footer {
+    background-color: rgb(205, 92, 92);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#kontakt, #promocje {
+    background-color: rgb(250, 235, 215);
+    width: 25%;
+    height: 500px;
+    float: right;
+}
+
+#galeria {
+    background-color: rgb(250, 237, 215);
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    float: right;
+}
+
+#lista-wycieczek {
+    background-color: rgb(200, 180, 140);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::first-letter {
+    font-size: 150%;
+}
+
+img {
+    height: 100px;
+    padding: 6px;
+    transition: background-color 0.3s;
+}
+
+img:hover {
+    background-color: rgb(208, 180, 142);
+}
+
+@media (max-width: 768px) {
+    #kontakt, #promocje, #galeria {
+        width: 100%;
+    }
+}
